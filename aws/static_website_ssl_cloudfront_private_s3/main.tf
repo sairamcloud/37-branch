@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
   tags   = var.tags
   versioning = {
-enabled = true
+enabled = false
 }
   }
 
@@ -28,7 +28,7 @@ resource "aws_s3_bucket_public_access_block" "website_bucket" {
   bucket = aws_s3_bucket.this.id
 
   block_public_acls   = false
-  block_public_policy = true
+  block_public_policy = false
 }
 
 data "aws_iam_policy_document" "s3_policy_document" {
