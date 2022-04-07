@@ -15,8 +15,8 @@ resource "aws_s3_bucket" "this" {
     allowed_origins = ["*"]
     max_age_seconds = 3000
   }
-versioning = {
-enabled = true
+##versioning = {
+##enabled = true
 }
   # Enable website hosting
   # Note, though, that when accessing the bucket over its SSL endpoint, the index_document will not be used
