@@ -6,7 +6,7 @@ Lots of Terraform recipes for doing things, aimed for copy and pasting into proj
 - [Azure Examples](#azure-examples)
 - [Google Cloud Platform Examples](#google-cloud-platform-examples)
 
-## Directory layout
+## Directory layoutlay
 
 - [aws](aws)
   - [aws/aws_domain_redirect](aws/aws_domain_redirect)
