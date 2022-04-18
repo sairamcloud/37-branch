@@ -2,7 +2,7 @@
   "scripts": {
       "readme": "node repotools/generate_readme.js"
   },  
-  "devDependencies": {
+  "devDependencie": {
     "glob": "^7.1.6"
   }
 }
