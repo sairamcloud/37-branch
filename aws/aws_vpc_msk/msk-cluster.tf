@@ -29,10 +29,10 @@ resource "aws_msk_cluster" "msk_cluster" {
   }
 
 
-  client_authentication {
+ /* client_authentication {
     tls {
       certificate_authority_arns = [aws_acmpca_certificate_authority.pca.arn]
-    }
+    }*/
   }
 
 
@@ -51,7 +51,7 @@ configuration_info {
   logging_info {
     broker_logs {
       cloudwatch_logs {
-        enabled   =false
+        enabled   =true
         log_group = aws_cloudwatch_log_group.cloudwatch_log_group.name
       }
     }
