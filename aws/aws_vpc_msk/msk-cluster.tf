@@ -28,13 +28,13 @@ resource "aws_msk_cluster" "msk_cluster" {
     security_groups = [aws_security_group.KafkaClusterSG.id]
   }
 
-  /*
+
   client_authentication {
     tls {
       certificate_authority_arns = [aws_acmpca_certificate_authority.pca.arn]
     }
   }
-*/
+
 
 configuration_info {
   arn = aws_msk_configuration.msk_cluster_config.arn
@@ -51,7 +51,7 @@ configuration_info {
   logging_info {
     broker_logs {
       cloudwatch_logs {
-        enabled   = true
+        enabled   =false
         log_group = aws_cloudwatch_log_group.cloudwatch_log_group.name
       }
     }
