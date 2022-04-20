@@ -15,7 +15,7 @@ locals {
   app_insights_name = "${var.name_prefix}app-insights"
 }
 
-resource "azurerm_key_vault" "current" {
+/*resource "azurerm_key_vault" "current" {
   name                = local.key_vault_name
   location            = data.azurerm_resource_group.current.location
   resource_group_name = data.azurerm_resource_group.current.name
@@ -26,7 +26,7 @@ resource "azurerm_key_vault" "current" {
   purge_protection_enabled   = true
 
   sku_name = "standard"
-}
+} */
 
 resource "azurerm_container_registry" "current" {
   name                = local.acr_name
