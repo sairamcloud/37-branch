@@ -1,4 +1,4 @@
-resource "aws_vpc" "msk_vpc" {
+/*resource "aws_vpc" "msk_vpc" {
   cidr_block = var.vpc_cidr
   tags = merge(
     local.common-tags,
@@ -7,4 +7,4 @@ resource "aws_vpc" "msk_vpc" {
       "Description", "VPC for creating MSK resources",
     )
   )
-}
+} */
