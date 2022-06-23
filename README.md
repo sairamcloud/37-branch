@@ -1,4 +1,4 @@
-![Hero](_header_/hero.png)
+![Herro](_header_/hero.png)
 ![Hero](_header_/hero.png)
  
 # Repository containing various Terraform codes
